@@ -5,6 +5,8 @@
 // This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
+#define MIRYOKU_ALPHAS_RSTHP
+#define MIRYOKU_TAP_RSTHP
 
 #include "miryoku_layer_alternatives.h"
 
@@ -54,6 +56,8 @@
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_QWERTY
     #elif defined (MIRYOKU_ALPHAS_QWERTZ)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_QWERTZ
+    #elif defined (MIRYOKU_ALPHAS_RSTHP)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_RSTHP
     #else
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH
     #endif
@@ -164,6 +168,8 @@
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_QWERTY
     #elif defined (MIRYOKU_TAP_QWERTZ)
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_QWERTZ
+    #elif defined (MIRYOKU_TAP_RSTHP)
+      #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_RSTHP
     #else
       #define MIRYOKU_LAYER_TAP MIRYOKU_ALTERNATIVES_TAP_COLEMAKDH
     #endif
@@ -274,4 +280,32 @@
 #endif
 #if !defined(MIRYOKU_LAYERMAPPING_FUN)
   #define MIRYOKU_LAYERMAPPING_FUN MIRYOKU_MAPPING
+#endif
+
+#if !defined(MIRYOKU_LAYER_NSYM)
+  #define MIRYOKU_LAYER_NSYM MIRYOKU_ALTERNATIVES_NSYM
+#endif
+#if !defined(MIRYOKU_LAYERMAPPING_NSYM)
+  #define MIRYOKU_LAYERMAPPING_NSYM MIRYOKU_MAPPING
+#endif
+
+#if !defined(MIRYOKU_LAYER_BRAC)
+  #define MIRYOKU_LAYER_BRAC MIRYOKU_ALTERNATIVES_BRAC
+#endif
+#if !defined(MIRYOKU_LAYERMAPPING_BRAC)
+  #define MIRYOKU_LAYERMAPPING_BRAC MIRYOKU_MAPPING
+#endif
+
+#if !defined(MIRYOKU_LAYER_PUNC)
+  #define MIRYOKU_LAYER_PUNC MIRYOKU_ALTERNATIVES_PUNC
+#endif
+#if !defined(MIRYOKU_LAYERMAPPING_PUNC)
+  #define MIRYOKU_LAYERMAPPING_PUNC MIRYOKU_MAPPING
+#endif
+
+#if !defined(MIRYOKU_LAYER_BNFRD)
+  #define MIRYOKU_LAYER_BNFRD MIRYOKU_ALTERNATIVES_BNFRD
+#endif
+#if !defined(MIRYOKU_LAYERMAPPING_BNFRD)
+  #define MIRYOKU_LAYERMAPPING_BNFRD MIRYOKU_MAPPING
 #endif

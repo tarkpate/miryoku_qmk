@@ -18,6 +18,10 @@ MIRYOKU_X(MOUSE,  "Mouse") \
 MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun")
+MIRYOKU_X(FUN,    "Fun") \
+MIRYOKU_X(NSYM,   "Nsym") \
+MIRYOKU_X(BRAC,   "Brac") \
+MIRYOKU_X(PUNC,   "Punc") \
+MIRYOKU_X(BNFRD,  "Bnfrd")
 
 #endif
